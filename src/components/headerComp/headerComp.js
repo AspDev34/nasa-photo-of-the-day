@@ -1,14 +1,14 @@
+import React from "react";
 
 
-
-function headerComp() {
+function HeaderComp(props) {
 
 
     return (
 
         <div>
 
-        <img>Nasa logo goes here</img>
+        <h1>{props.headerData.title}</h1>
 
         </div>
 
@@ -18,4 +18,4 @@ function headerComp() {
 
 };
 
-export default headerComp;
+export default HeaderComp;

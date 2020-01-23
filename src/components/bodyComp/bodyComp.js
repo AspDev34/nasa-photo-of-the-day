@@ -1,16 +1,18 @@
-import bgImg from '../../../images/bgImg';
+import React from "react";
+import HeaderComp from "../headerComp/headerComp";
+import FooterComp from "../footerComp/footerComp";
 
-function bodyComp() {
+function BodyComp(props) {
 
 
     return (
 
         <div>
+            <HeaderComp headerData={props.bodyData}/>
+            <img src={props.bodyData.url}></img>
 
-        TEST TO SEE IF ITS RENDERING
-
-        <button>Click here to see photo of the day</button>
-
+            <p>{props.bodyData.explanation}</p>
+            <FooterComp footerData={props.bodyData.copyright}/>
         </div>
 
 
@@ -19,4 +21,4 @@ function bodyComp() {
 
 };
 
-export default bodyComp;
+export default BodyComp;

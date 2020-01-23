@@ -1,16 +1,12 @@
+import React from "react";
 
 
-
-function footerComp() {
+function FooterComp(props) {
 
 
     return (
 
-        <p>
-
-        Ike Otu Lambda Web 27
-
-        </p>
+    <p>{props.footerData}</p>
 
 
     );
@@ -18,4 +14,4 @@ function footerComp() {
 
 };
 
-export default footerComp;
+export default FooterComp;
