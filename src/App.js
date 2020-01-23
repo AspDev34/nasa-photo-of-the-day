@@ -6,7 +6,7 @@ import axios from "axios";
 function App() {
   useEffect(() => {
     axios
-      // .get('https://api.nasa.gov/planetary/apod?api_key=9f9o0EIOy8UKqhggfDTdBdZNxfadae3JHnmelLWK')
+      .get('https://api.nasa.gov/planetary/apod?api_key=9f9o0EIOy8UKqhggfDTdBdZNxfadae3JHnmelLWK')
          .then(res => {
            console.log(res);
          })
