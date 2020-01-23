@@ -5,9 +5,11 @@ function bodyComp() {
 
     return (
 
-        <div className="container" styles={{backgroundImage: url('../../../images/bgImg')}}>
+        <div>
 
         TEST TO SEE IF ITS RENDERING
+
+        <button>Click here to see photo of the day</button>
 
         </div>
 
