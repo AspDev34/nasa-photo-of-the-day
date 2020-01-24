@@ -2,7 +2,16 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from "axios";
 import BodyComp from "./components/bodyComp/bodyComp";
+import HeaderComp from "./components/headerComp/headerComp";
+import styled from "styled-components";
 
+const AppStyle = styled.div`
+
+display: flex;
+flex-direction: column;
+background: gray;
+
+`
 
 function App() {
   const [Data, setData] = useState([])
@@ -19,14 +28,14 @@ function App() {
          })
   }, []); 
   return (
-    <div className="App">
+    <AppStyle className="App">
       {/* <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
       </p> */}
-
+      <HeaderComp bodyData={Data}/> 
       <BodyComp bodyData={Data}/>
-    </div>
+    </AppStyle>
   );
 }
 
